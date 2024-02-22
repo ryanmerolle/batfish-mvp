@@ -33,6 +33,10 @@ if __name__ == "__main__":
     r3 = bfq.lpmRoutes(ip='10.0.255.22').answer().frame()
     print(r3)
 
+    print("ANALYSIS // Missing or Errant Config)
+    r4 = bf.q.undefinedReferences().answer().frame()
+
+
     # Saving output
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)
@@ -40,3 +44,4 @@ if __name__ == "__main__":
     r1.to_csv(f"{output_dir}/r1.csv")
     r2.to_csv(f"{output_dir}/r2.csv")
     r3.to_csv(f"{output_dir}/r3.csv")
+    r4.to_csv(f"{output_dir}/r4.csv")
